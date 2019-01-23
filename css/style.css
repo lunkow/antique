@@ -1,0 +1,797 @@
+@font-face {
+    font-family: 'Bring Heart';
+    src:  url("../fonts/Bring-Heart.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FuturaBookC";
+    src: url("../fonts/FuturaBookC-Italic.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url("../fonts/FuturaMediumC.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Monotype Corsiva';
+    src:  url("../fonts/MonotypeCorsiva.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.icon{}
+.icon-phone-in-a-circle,.icon-phone-in-a-circle\:regular{
+    display: inline-block;
+    margin: 0 0 -3px 0;
+    background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M256%2032c123.5%200%20224%20100.5%20224%20224S379.5%20480%20256%20480%2032%20379.5%2032%20256%20132.5%2032%20256%2032m0-32C114.62%200%200%20114.63%200%20256s114.63%20256%20256%20256%20256-114.63%20256-256S397.37%200%20256%200zm142.72%20341.6l-1.44-4.38c-3.37-10.06-14.5-20.56-24.75-23.38L334.7%20303.5c-10.25-2.78-24.88.97-32.4%208.5l-13.7%2013.69a145.37%20145.37%200%200%201-102.21-102.25l13.68-13.69c7.5-7.5%2011.25-22.13%208.47-32.4l-10.31-37.85c-2.78-10.25-13.35-21.38-23.4-24.75l-4.32-1.44c-10.1-3.37-24.5.03-32%207.56l-20.5%2020.5c-3.66%203.63-6%2014.04-6%2014.07a242.2%20242.2%200%200%200%2070.81%20173.75%20241.93%20241.93%200%200%200%20173.16%2070.78c.34%200%2011.06-2.28%2014.72-5.94l20.5-20.5c7.5-7.47%2010.87-21.87%207.53-31.94z%22%20fill%3D%22%23f0be6c%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat:no-repeat;
+}
+ .icon-phone-in-a-circle-dims{width:18px;height:18px;}
+
+.icon-home,.icon-home\:regular{
+    display: inline-block;
+    background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%20510%20510%22%3E%3Cpath%20fill%3D%22%23403a30%22%20d%3D%22M204%20471.75v-153h102v153h127.5v-204H510L255%2038.25%200%20267.75h76.5v204z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat:no-repeat;
+    margin-right: 15px;
+    vertical-align: middle;
+    border: 1px solid #c09349;
+    border-radius: 50%;
+    padding: 7px;
+    background-position: center 6px;
+}
+ .icon-home-dims{width:18px;height:18px}
+
+.icon-phone,.icon-phone\:regular{
+    display: inline-block;
+    background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20578.106%20578.106%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20d%3D%22M577.83%20456.128c1.225%209.385-1.635%2017.545-8.568%2024.48l-81.396%2080.781c-3.672%204.08-8.465%207.551-14.381%2010.404-5.916%202.857-11.729%204.693-17.439%205.508-.408%200-1.635.105-3.676.309-2.037.203-4.689.307-7.953.307-7.754%200-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584c-25.096-10.404-53.553-26.012-85.376-46.818-31.823-20.805-65.688-49.367-101.592-85.68-28.56-28.152-52.224-55.08-70.992-80.783-18.768-25.705-33.864-49.471-45.288-71.299-11.425-21.828-19.993-41.616-25.705-59.364S4.59%20177.362%202.55%20164.51-.306%20141.56.102%20134.216c.408-7.344.612-11.424.612-12.24.816-5.712%202.652-11.526%205.508-17.442s6.324-10.71%2010.404-14.382L98.022%208.756c5.712-5.712%2012.24-8.568%2019.584-8.568%205.304%200%209.996%201.53%2014.076%204.59s7.548%206.834%2010.404%2011.322l65.484%20124.236c3.672%206.528%204.692%2013.668%203.06%2021.42-1.632%207.752-5.1%2014.28-10.404%2019.584l-29.988%2029.988c-.816.816-1.53%202.142-2.142%203.978s-.918%203.366-.918%204.59c1.632%208.568%205.304%2018.36%2011.016%2029.376%204.896%209.792%2012.444%2021.726%2022.644%2035.802s24.684%2030.293%2043.452%2048.653c18.36%2018.77%2034.68%2033.354%2048.96%2043.76%2014.277%2010.4%2026.215%2018.053%2035.803%2022.949%209.588%204.896%2016.932%207.854%2022.031%208.871l7.648%201.531c.816%200%202.145-.307%203.979-.918%201.836-.613%203.162-1.326%203.979-2.143l34.883-35.496c7.348-6.527%2015.912-9.791%2025.705-9.791%206.938%200%2012.443%201.223%2016.523%203.672h.611l118.115%2069.768c8.571%205.308%2013.67%2012.038%2015.303%2020.198z%22%20fill%3D%22%23403a30%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat:no-repeat;
+    margin-right: 15px;
+    vertical-align: middle;
+    border: 1px solid #c09349;
+    border-radius: 50%;
+    padding: 7px;
+    background-position: center center;
+}
+ .icon-phone-dims{width:16px;height:16px}
+
+.icon-calendar,.icon-calendar\:regular{
+    display: inline-block;
+    background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M452%2040h-24V0h-40v40H124V0H84v40H60C26.916%2040%200%2066.916%200%20100v352c0%2033.084%2026.916%2060%2060%2060h392c33.084%200%2060-26.916%2060-60V100c0-33.084-26.916-60-60-60zm20%20412c0%2011.028-8.972%2020-20%2020H60c-11.028%200-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028%208.972-20%2020-20h24v40h40V80h264v40h40V80h24c11.028%200%2020%208.972%2020%2020v48z%22%20fill%3D%22%23403a30%22%2F%3E%3Cpath%20fill%3D%22%23403a30%22%20d%3D%22M76%20230h40v40H76zm80%200h40v40h-40zm80%200h40v40h-40zm80%200h40v40h-40zm80%200h40v40h-40zM76%20310h40v40H76zm80%200h40v40h-40zm80%200h40v40h-40zm80%200h40v40h-40zM76%20390h40v40H76zm80%200h40v40h-40zm80%200h40v40h-40zm80%200h40v40h-40zm80-80h40v40h-40z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat:no-repeat;
+    margin-right: 15px;
+    vertical-align: middle;
+    border: 1px solid #c09349;
+    border-radius: 50%;
+    padding: 7px;
+    background-position: center center;
+}
+ .icon-calendar-dims{width:18px;height:18px}
+
+.icon-email,.icon-email\:regular{
+    display: inline-block;
+    background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%20612%20612%22%3E%3Cpath%20d%3D%22M306.768%20346.814h.131c4.615%200%209.176-1.339%2012.866-3.777l1.001-.643c.218-.142.446-.271.675-.424l11.658-9.645%20278.259-229.624c-.576-.795-1.557-1.339-2.602-1.339H3.233c-.751%200-1.448.272-2.003.729l291.125%20239.954c3.669%203.038%208.904%204.769%2014.413%204.769zM0%20133.899v340.37l208.55-168.471L0%20133.899zm403.668%20173.042L612%20474.356V135.031l-208.332%20171.91zm-66.237%2054.644c-8.305%206.814-19.168%2010.57-30.576%2010.57-11.451%200-22.304-3.734-30.587-10.516l-47.765-39.394L0%20506.806v.587c0%201.753%201.502%203.244%203.276%203.244h605.491c1.741%200%203.232-1.491%203.232-3.255v-.544L383.693%20323.4l-46.262%2038.185z%22%20fill%3D%22%23403a30%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat:no-repeat;
+    margin-right: 15px;
+    vertical-align: middle;
+    border: 1px solid #c09349;
+    border-radius: 50%;
+    padding: 7px;
+    background-position: center center;
+}
+ .icon-email-dims{width:18px;height:18px}
+
+
+body{
+    font-size: 0;
+}
+
+a{text-decoration: none;}
+
+h3{ }
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #014363;
+    border-bottom: solid 3px #f0be6c;
+    z-index: 5;
+}
+
+.header-container{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.main-telephone{
+    display: inline-block;
+    width: 30.33%;
+    padding-right: 3%;
+    text-align: right;
+    line-height: 70px;
+}
+
+
+.main-telephone-link{
+    padding-left: 5px;
+    text-decoration: none;
+    font-family: "FuturaMediumC", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+    .main-nav{
+        display: inline-block;
+        width: 33.33%;
+        margin-left: 33.33%;
+        line-height: 70px;
+    }
+    .main-nav__list{
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+    }
+    .main-nav__item{
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        padding-right: 25px;
+    }
+     .main-nav__item:last-child{
+            padding-right: 0;
+     }
+    .main-nav__link{ text-decoration: none; color: #FFFFFF;}
+    .main-nav__link-active{color: #f0be6c;}
+
+.first-screen{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    min-height: 450px;
+    padding-top: 100px;
+    background-image: url("../img/bg-1-screen.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+ .first-screen__container{
+     display: block;
+     width: 1024px;
+     margin: 0 auto;
+     text-align: center;
+ }
+ .logo{
+     display: inline-block;
+     width: 400px;
+     margin-top: 70px;
+     font-family: "Bring Heart", sans-serif;
+     font-size: 0;
+     color: #b28d50;
+ }
+ .logo__first-line{
+     display: block;
+     font-size: 176px;
+     margin-left: -135px;
+
+ }
+ .logo__second-line{
+     display: block;
+     font-size: 176px;
+     margin-top: -170px;
+     margin-right: -230px;
+ }
+
+ .logo__third-line{
+     display: block;
+     width: 265px;
+     padding-top: 10px;
+     margin: -30px auto 0;
+     text-align: center;
+     text-transform: uppercase;
+     font-family: "FuturaBookC", sans-serif;
+     font-size: 20px;
+     color: #7a6137;
+     border-top: 2px solid #b28d50;
+ }
+ .first-screen__btn{
+     display: inline-block;
+     width: 180px;
+     height: 40px;
+     margin-top: 60px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     font-family: FuturaMediumC, sans-serif;
+     font-size: 14px;
+     text-transform: uppercase;
+     line-height: 40px;
+     text-align: center;
+ }
+
+.first-screen__btn-link{
+    text-decoration: none;
+}
+  .first-screen__btn-tosale{
+      border: 1px solid #6a5430;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #6a5430;
+      margin-right: 30px;
+ }
+  .first-screen__btn-tobuy{
+      background-color: #c09349;
+      color: #FFFFFF;
+  }
+
+
+  /*---------------2nd SCREEN-----------------*/
+.second-screen{
+    padding-bottom: 30px;
+}
+.second-screen__container{
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+.second-screen__title{
+    display: block;
+    width: 25%;
+    height: 70px;
+    background: url("../img/decor-element.png") bottom no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: "Monotype Corsiva", sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #4c3c2d;
+}
+.second-screen__wrapper{
+    min-height: 300px;
+    margin: 50px 150px 0 0;
+    background: url("../img/sсreen-2-casket.png") right no-repeat;
+    -webkit-background-size: 35% auto;
+    background-size: 35% auto;
+    text-align: left;
+}
+.second-screen__text{
+    display: inline-block;
+    width: 60%;
+    padding-left: 35px;
+    font-family: FuturaBookC, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/*---------------3rd SCREEN-----------------*/
+.third-screen{
+    display: block;
+    width: 100%;
+    /*height: 100vh;*/
+    min-height: 600px;
+    padding-bottom: 30px;
+    background-image: url("../img/bg-3-screen.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.third-screen__container{
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ .third-screen__title{ 
+     display: block;
+     width: 25%;
+     height: 70px;
+     background: url("../img/decor-element.png") bottom no-repeat;
+     -webkit-background-size: contain;
+     background-size: contain;
+     margin: 0 auto;
+     padding-top: 20px;
+     font-family: "Monotype Corsiva", sans-serif;
+     font-size: 35px;
+     font-weight: normal;
+     color: #4c3c2d;
+ }
+
+ .third-screen__wrapper{
+    position: relative;
+     margin: 50px 0 40px 0;
+     text-align: left;
+ }
+  .third-screen__text{
+      display: inline-block;
+      width: 50%;
+      margin: 0 50px 0 35px;
+      font-family: FuturaBookC, sans-serif;
+      font-size: 16px;
+      text-align: left;
+  }
+
+  .third-screen__form {
+      display: inline-block;
+      position: absolute;
+      width: 400px;
+      height: 250px;
+      background-color: #fff;
+      text-align: center;
+  }
+
+    .third-screen__form-text{
+        display: block;
+        margin-top: 80px;
+        font-family: FuturaBookC, sans-serif;
+        font-size: 26px;
+    }
+    .third-screen__form-button{
+        width: 210px;
+        height: 45px;
+        margin-top: 15px;
+        background-color: #c09349;
+        font-family: FuturaMediumC, sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+
+/*---------------4th SCREEN-----------------*/
+.fourth-screen{
+    display: block;
+    width: 100%;
+    min-height: 580px;
+    height: 90vh;
+    padding-bottom: 30px;
+}
+.fourth-screen__container{
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+ .fourth-screen__title{
+     display: block;
+     width: 25%;
+     height: 70px;
+     background: url("../img/decor-element.png") bottom no-repeat;
+     -webkit-background-size: contain;
+     background-size: contain;
+     margin: 0 auto 0;
+     padding-top: 20px;
+     font-family: "Monotype Corsiva", sans-serif;
+     font-size: 35px;
+     font-weight: normal;
+     color: #4c3c2d;
+ }
+
+.catalog-menu{
+    width: 100%;
+    margin-top: 40px;
+    background-color: #f1f1f1;
+}
+ .catalog-menu__list{
+     list-style: none;
+     padding: 0;
+     text-align:justify;
+     text-align-last:justify;
+ }
+ .catalog-menu__list:after{
+     content:"";
+     display:inline-block;
+     width:100%;
+     height:0;
+     overflow:hidden;
+ }
+  .catalog-menu__item{
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 18px;
+      height: 30px;
+      line-height: 30px;
+  }
+  .catalog-menu__link{
+      text-decoration: none;
+      font-family: FuturaMediumC, sans-serif;
+      color: #4c3c2d;
+  }
+
+.fourth-screen__image{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: url("../img/sсreen-4-candlesticks.png") bottom left 125px no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    min-height: 100px;
+    text-align: right;
+}
+.fourth-screen__text{
+    display: inline-block;
+    width: 60%;
+    padding: 30px 0; /* нужен, чтобы фоновые свечи были шире текста */
+    margin: 0 35px 0 50px;
+    font-family: FuturaBookC, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.fourth-screen__last-arrivals{}
+.fourth-screen__btn-catalog{
+    display: block;
+    width: 250px;
+    height: 45px;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: FuturaMediumC, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 45px;
+    text-align: center;
+    background-color: #c09349;
+}
+
+/*---------------CONTACTS SCREEN-----------------*/
+.fifth-screen{   position: relative;}
+
+
+.fifth-screen__title {
+    display: block;
+    width: 25%;
+    height: 60px;
+    background: url("../img/decor-element.png") bottom no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: "Monotype Corsiva", sans-serif;
+    font-size: 31px;
+    font-weight: normal;
+    color: #4c3c2d;
+}
+
+
+.fifth-screen__map{
+    display: block;
+    width: 100%;
+    height: 600px;
+    z-index: -5;
+}
+
+.fifth-screen__contacts{
+    position: absolute;
+    top: 45px;
+    right: 47px;
+    bottom: 65px;
+    width: 530px;
+    vertical-align: top;
+    background-color: #fff;
+}
+.fifth-screen__wrapper{}
+
+.fifth-screen__line{
+    display: block;
+    height: 60px;
+    margin-left: 23%;
+}
+
+.fifth-screen__line:after{
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:0;
+    overflow:hidden;
+    vertical-align:middle;
+}
+
+.fifth-screen__line:first-child{
+    margin-top: 35px;
+}
+
+.contacts__item{
+    display: inline-block;
+    margin: 0;
+    font-family: FuturaMediumC, sans-serif;
+    font-size: 18px;
+    color: #4c3c2d;
+    vertical-align: middle;
+}
+
+ .contacts__item-adress{
+     display: block;}
+ .contacts__item-reference-point{
+     display: block;
+     font-size: 14px;}
+ .contacts__item-tel-descriptor{
+     display: block;
+     font-size: 14px;}
+ .contacts__item-schedule{
+     display: block;
+     font-size: 16px;}
+
+.contacts__item-toggleMap{
+    display: none;
+
+}
+
+/*---------------FOOTER SCREEN-----------------*/
+.footer-block{
+    width: 100%;
+    background-color: #014363;
+}
+.footer__container {
+    display: block;
+    width: 1024px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.footer__privacy-policy-link{
+    display: inline-block;
+    margin-top: 20px;
+    /*margin-left: 20px;*/
+    text-decoration: underline;
+    text-align: left;
+    font-family: FuturaLightC, sans-serif;
+    font-size: 14px;
+    color: #c1baa7;
+}
+
+.menu-block__hidden{ display: none;}  /*чекбокс для гамбургера*/
+
+
+
+@media screen and (max-width: 1024px){
+
+    .menu{  min-width: 360px;}
+
+/*HAMBURGER MENU*/
+/*////////////////////////////////////////////////////*/
+
+    .main-nav__list{
+        display: block;
+        position: fixed;
+        list-style:none;
+        padding: 70px 10px 10px 30px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 150px;
+        background-color: #014363;
+        height: 100%;
+        top: 0;
+        left: -200px;
+        transition: left .2s;
+        z-index: 5;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        overflow: auto;
+    }
+
+    .main-nav__item{
+        display: block;
+        padding: 0;
+        text-align: left;
+    }
+    .main-telephone{width: 97%;}
+
+    .menu-block__hidden{ display: none;}
+
+    .menu__button{
+        color: #fff;
+        background-color: #014363;
+        position: fixed;
+        top: 26px;
+        left: 3%;
+        cursor: pointer;
+        transition: left .23s;
+        z-index: 10;
+        width: 25px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+
+    .humberger-element{
+        display: block;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px 0 0;
+        transition: all .1s linear .23s;
+        position: relative;
+    }
+
+    .humburger-line__top{
+        margin-top: 0;
+    }
+
+    .menu-block__hidden:checked ~ .menu__button{
+        left: 160px;
+    }
+
+    .menu-block__hidden:checked ~ .main-nav__list{
+        left: 0;
+    }
+
+    .menu-block__hidden:checked ~ .humburger-line__top{
+        -webkit-transform: rotate(45deg);
+        top: 10px;
+    }
+
+    .menu-block__hidden:checked ~ .humburger-line__middle{
+        opacity: 0;
+    }
+
+    .menu-block__hidden:checked ~ .humburger-line__bottom{
+        -webkit-transform: rotate(-45deg);
+        top: -10px;
+    }
+    .menu-item__link-7{
+        margin: 0;
+    }
+ /*конец гамбургер меню*/
+
+
+    /*---------------1st SCREEN-----------------*/
+    .first-screen{
+        min-height: 500px;}
+    .first-screen__container{
+        width: 90%;
+    }
+    .logo{
+        width: 320px;
+        margin-top: 160px;
+    }
+    .logo__first-line{
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        font-size: 140px;
+        margin-left: 0;
+        line-height: 0.2;
+    }
+    .logo__second-line{
+        display: inline-block;
+        position: relative;
+        left: -20px;
+        font-size: 140px;
+        margin-right: 0;
+        margin-top: 0;
+        line-height: 0.2;
+    }
+    .logo__third-line{
+        margin-top: 20px;
+    }
+    .first-screen__btn{
+        width: 140px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /*--------------- THE END OF 1st SCREEN -----------------*/
+
+
+    /*--------------- 2nd SCREEN -----------------*/
+    .second-screen__container{width: 100%;}
+    .second-screen__title{width: 230px;}
+    .second-screen__wrapper{
+        margin-right: 0;
+        text-align: center;
+        background:
+                linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.8)) right,
+                url("../img/sсreen-2-casket.png") right no-repeat;
+        -webkit-background-size: 330px;
+        background-size: 330px;
+    }
+    .second-screen__text{width: 90%;}
+    /*--------------- THE END OF 2nd SCREEN -----------------*/
+
+    /*--------------- 3rd SCREEN -----------------*/
+    .third-screen__container{width: 100%;}
+    .third-screen__title{width: 230px;}
+    .third-screen__wrapper{text-align: center;}
+    .third-screen__text{width: 90%;
+        margin: 0;
+    }
+    .third-screen__form{
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+    }
+    /*--------------- THE END OF 3rd SCREEN -----------------*/
+
+
+    /*--------------- 4th SCREEN -----------------*/
+    .fourth-screen__container{width: 100%;}
+    .fourth-screen__title{width: 230px;}
+    .catalog-menu{display: none;}
+    .fourth-screen__image{
+
+        background:
+    linear-gradient(to right, rgba(255,255,255,0.6), rgba(255,255,255,0.6)) left,
+    url("../img/sсreen-4-candlesticks.png") left no-repeat;
+        background-position: 100px 0;
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin: 50px auto 50px;
+        text-align: center;
+    }
+    .fourth-screen__text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /*--------------- THE END OF 4th SCREEN -----------------*/
+
+    /*--------------- 5th SCREEN -----------------*/
+    .fifth-screen{
+        height: 450px;
+    }
+    .fifth-screen__map{display: none}
+    .fifth-screen__contacts{
+        width: 100%;
+        position: static;
+        margin-bottom: 60px;
+        height: 415px; /*высота заголовка + высота линий + марджин первой линии*/
+    }
+    .fifth-screen__line{
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+        left: 35px;
+    }
+     .icon-home, .icon-phone, .icon-calendar, .icon-email{
+        margin-right: 20px;
+     }
+
+    /*если карта спрятана -- добавляется и mapIsHidden для следующего за ней fifth-screen__contacts*/
+    .hideTrigger{    display: block;}  /*для блока карты*/
+
+    .mapHider{
+        padding-top: 415px;  /*высота таблички с инфой*/
+        height: 600px;  /*415px + 600px общая выстоа крты и высота таблички с инфой __contacts*/
+    }/*для блока с контактами - заполняет место скрытой карты*/
+
+    .upperClass{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-bottom: 0;
+    }
+
+    .contacts__item-toggleMap{
+        display: block;
+        cursor: pointer;
+        text-decoration: underline;
+        margin-left: 55px;
+        font-size: 22px;}
+
+    .fifth-screen__title{width: 230px;
+        text-align: center;}
+    /*--------------- THE END OF 5th SCREEN -----------------*/
+
+    /*--------------- FOOTER -----------------*/
+    .footer__container{width: 100%;}
+    /*--------------- THE END OF FOOTER -----------------*/
+
+}
+ 
